@@ -44,8 +44,17 @@ public class Person {
                 Imie: %s
                 Nazwisko: %s
                 Rok urodzenia: %s
-                płeć: %s
+                Płeć: %s
                 ----------------------------------------------
                 """;
+        String result = String.format(
+                template,
+                getName(),
+                getSurname(),
+                getBirth_date(),
+                getSex()
+        );
+        System.out.println(result);
+
     }
 }
